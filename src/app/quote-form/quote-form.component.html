@@ -1,6 +1,6 @@
 <div class="container submit-form">
     <h3 class="brainy">Create a Brainy Quote 💬</h3>
-    <form (ngSubmit)="addAnotherQuote()">
+    <form (submit)="addAnotherQuote()">
         <div class="form-group">
             <textarea id="message"  rows="8" placeholder="Quote.." class="form-control item"
             [(ngModel)]="newQuote.text" name="message" #message='ngModel' required></textarea>
@@ -26,9 +26,6 @@
                 <p>Date is required</p>
             </div>
         </div>
-
-        <div class="form-group">
-            <button type="button" class="btn btn-block">Add Quote</button>
-        </div>
+            <button type="submit" class="btn btn-block">Add Quote</button>
     </form>
 </div>
