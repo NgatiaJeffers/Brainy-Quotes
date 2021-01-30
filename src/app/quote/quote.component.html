@@ -1,1 +1,24 @@
-<p>quote works!</p>
+<div class="container-fluid">
+    <div class="row">
+        <app-quote-form class="col-md-4"></app-quote-form>
+        <div class="col-md-8">
+            <blockquote class="quote-box">
+                <p class="quotation-mark">
+                    “
+                </p>
+                <p class="quote-text">
+                    {{ author.text }}
+                </p>
+                <hr>
+                <div class="name-post">
+                    <p class="name-post-bottom pull-left">
+                        {{ author.name }}
+                    </p>
+                    <p class="name-post-bottom pull-right">
+                        <span class="badge quote-badge">2</span>>❤
+                    </p>
+                </div>
+            </blockquote>
+        </div>
+    </div>
+</div>
