@@ -1,21 +1,21 @@
 <div class="container-fluid">
     <div class="row">
-        <app-quote-form class="col-md-4"></app-quote-form>
-        <div class="col-md-8">
-            <blockquote class="quote-box">
+        <app-quote-form class="col-md-4 "></app-quote-form>
+        <div class="col-md-8 bq">
+            <blockquote class="quote-box" *ngFor="let quote of quotes, let i = index">
                 <p class="quotation-mark">
-                    “
+                    “ {{ quote.title }}
                 </p>
                 <p class="quote-text">
-                    {{ author.text }}
+                    {{ quote.message }}
                 </p>
                 <hr>
                 <div class="name-post">
-                    <p class="name-post-bottom pull-left">
-                        {{ author.name }}
+                    <p class="name-post-bottom float-left">
+                        {{ quote.name }}
                     </p>
-                    <p class="name-post-bottom pull-right">
-                        <span class="badge quote-badge">2</span>>❤
+                    <p class="name-post-bottom float-right">
+                        <span class="badge quote-badge">{{ quote.vote }}</span>>❤
                     </p>
                 </div>
             </blockquote>

@@ -1,6 +1,18 @@
+.bq {
+    margin-top: 2em;
+    justify-content: space-evenly;
+
+}
+
+blockquote{
+    border-left:none;
+    float: left;
+    margin: 10px 20px;
+}
+
 .quote-box {
     overflow: hidden;
-    margin-top: -50px;
+    margin-top: 30px;
     padding-top: -100px;
     border-radius: 10px;
     background-color: #fedd89;
@@ -20,4 +32,10 @@
 .quote-text {
     font-size: 19px;
     margin-top: -65px;
+    color: #31383f;
+}
+
+
+.quote-badge{
+    background-color: rgba(0, 0, 0, 0.2);   
 }
