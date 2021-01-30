@@ -3,7 +3,7 @@
     <form (ngSubmit)="addAnotherQuote()">
         <div class="form-group">
             <textarea id="message"  rows="8" placeholder="Quote.." class="form-control item"
-            [(ngModel)]="newQuoteMessage" name="message" #message='ngModel' required></textarea>
+            [(ngModel)]="newQuote.text" name="message" #message='ngModel' required></textarea>
             <div [hidden]="message.valid || message.pristine" class="alert alert-danger ">
                 <p>The quote is required</p>
             </div>
@@ -11,7 +11,7 @@
 
         <div class="form-group">
             <input type="text" class="form-control item" id="author" placeholder="Author"
-            [(ngModel)]="newQuoteAuthor" name="author" #author='ngModel' required>
+            [(ngModel)]="newQuote.author" name="author" #author='ngModel' required>
                 <div [hidden]="author.valid || author.pristine" class="alert alert-danger ">
                     <p>The author is required</p>
                 </div>
@@ -19,7 +19,7 @@
 
         <div class="form-group">
             <label for="date">Date:</label>
-            <input type='date' id="date" class="form-control item" [(ngModel)]="newQuoteDate" name="date"
+            <input type='date' id="date" class="form-control item" [(ngModel)]="newQuote.date" name="date"
                 #date='ngModel'
                 required>
             <div [hidden]="date.valid || date.pristine" class="alert alert-danger">
