@@ -2,24 +2,18 @@
     <div class="row">
         <app-quote-form class="col-md-4" (addQuote)="addNewQuote($event)"></app-quote-form>
         <div class="col-md-8 bq">
-            <blockquote class="quote-box" *ngFor="let quote of quotes, let i = index">
-                <p class="quotation-mark">
-                    “
-                </p>
-                <p class="quote-text">
-                    {{ quote.text }}
-                </p>
-                <hr>
-                <div class="name-post">
-                    <p class="name-post-bottom float-left">
-                        {{ quote.author }}
-                    </p>
-                    <p class="name-post-bottom float-right">
-                        {{ quote.date | date }}
-                    </p>
+                <div class="col-lg-6 mx-auto">
+                    <blockquote class="blockquote blockquote-custom bg-white p-5 shadow rounded" *ngFor="let quote of quotes, let i = index">
+                        <div class="blockquote-custom-icon bg-info shadow-sm"><i class="fa fa-quote-left text-white"></i></div>
+                        <p class="mb-0 mt-2 font-italic">"{{ quote.text }}."</p>
+                        <footer class="blockquote-footer pt-4 mt-4 border-top">Quote by
+                            <cite title="quote author">{{ quote.author }}</cite>
+                            <br>
+                            <cite title="quote date">{{ quote.date | date }}</cite>
+                        </footer>
+                        <app-quote-vote></app-quote-vote>
+                    </blockquote>
                 </div>
-                <app-quote-vote></app-quote-vote>
-            </blockquote>
         </div>
     </div>
 </div>
