@@ -1,6 +1,7 @@
 .brainy {
     font-size: 30px;
-    color: #f2e9eb;
+    color: #dd8ea4;
+    margin-top: 1em;
 }
 
 .submit-form {
@@ -10,7 +11,7 @@
 .submit-form form {
     background-color: #dd8ea4;
     max-width: 600px;
-    margin: auto;
+    margin-top: 1em;
     padding: 50px 70px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;

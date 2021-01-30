@@ -4,15 +4,15 @@
         <div class="col-md-8 bq">
             <blockquote class="quote-box" *ngFor="let quote of quotes, let i = index">
                 <p class="quotation-mark">
-                    “ {{ quote.title }}
+                    “
                 </p>
                 <p class="quote-text">
-                    {{ quote.message }}
+                    {{ quote.text }}
                 </p>
                 <hr>
                 <div class="name-post">
                     <p class="name-post-bottom float-left">
-                        {{ quote.name }}
+                        {{ quote.author }}
                     </p>
                     <p class="name-post-bottom float-right">
                         <span class="badge quote-badge">{{ quote.vote }}</span>>❤

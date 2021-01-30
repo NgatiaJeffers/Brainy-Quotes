@@ -40,6 +40,12 @@ export class QuoteComponent implements OnInit {
       'Jeffrey Zeldman',
       new Date(2018, 6, 3),
       632
+    ),
+    new Quote(
+      'Any sufficiently advanced technology is indistinguishable from magic.',
+      'Arthur C. Clarke',
+      new Date(2014, 8, 6),
+      867
     )
   ]
 
