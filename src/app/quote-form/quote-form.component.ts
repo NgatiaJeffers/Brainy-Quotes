@@ -8,7 +8,8 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 })
 export class QuoteFormComponent implements OnInit {
 
-  newQuote = new Quote('', '', '', new Date(), 0, 0);
+  newQuote = new Quote('', '', new Date(), 0);
+  
   @Output() addQuote = new EventEmitter<Quote>();
 
   addAnotherQuote() {
