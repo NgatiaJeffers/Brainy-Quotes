@@ -8,7 +8,7 @@ import { Quote } from '../module/quote';
 })
 export class QuoteComponent implements OnInit {
 
-  @Output() data = new EventEmitter();
+  @Output() myData = new EventEmitter();
   
   quotes: Quote[] = [
     new Quote(
