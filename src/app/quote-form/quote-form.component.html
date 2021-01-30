@@ -1,13 +1,6 @@
 <div class="container submit-form">
-    <h3 class="brainy">Create a Brainy Quote 💭</h3>
+    <h3 class="brainy">Create a Brainy Quote 💬</h3>
     <form (ngSubmit)="addAnotherQuote()">
-        <div class="form-group">
-            <input type="text" class="form-control item" id="quoteTitle" placeholder="Quote Title">
-            <div [hidden]="title.valid || title.pristine" class="alert alert-danger ">
-                <p>Name is required</p>
-            </div>
-        </div>
-
         <div class="form-group">
             <textarea id="message"  rows="8" placeholder="Quote.." class="form-control item"
             [(ngModel)]="newQuoteMessage" name="message" #message='ngModel' required></textarea>
