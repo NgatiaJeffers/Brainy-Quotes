@@ -9,7 +9,9 @@
     box-sizing: border-box;
 }
 
+
 body {
+    margin: 0;
     font-family: "Poppins", Gotham Rounded, monospace;
 }
 
@@ -21,4 +23,5 @@ body {
 .navbar-brand.h1 {
     color: #fedd89;
     font-size: 2em;
+    margin-left: .8em;
 }
