@@ -1,8 +1,13 @@
 # Quotes
 
-Brainy Quotes is website that displays quotes, where one can create a quote and still display it. You can upvote and downvote the quote.
+Brainy Quotes is website that displays quotes, where one can create a quote and
+still display it. You can upvote and downvote the quote.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.7.
+## By **Jefferson Gakuya**
+
+## Screenshot
+
+<img src="src/assets/brain.png" width="1000">
 
 ## Development server
 
@@ -26,4 +31,16 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 
 ## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README]
+
+## Support and contact details
+
+JeffDev Phone: +254 713 070 350
+JeffDev Email: jeffersongakuya@gmail.com
+
+### License
+
+No Licence issued. modify it at your own cost
+Copyright (c) 2020 **JeffDev**
+
+Licensed under the [MIT license](LICENSE).
